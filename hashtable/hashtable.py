@@ -75,7 +75,7 @@ class HashTable:
         between within the storage capacity of the hash table.
         """
         return self.fnv1(key) % self.capacity
-        # return self.djb2(key) % self.capacity
+        return self.djb2(key) % self.capacity
 
     def put(self, key, value):
         """
